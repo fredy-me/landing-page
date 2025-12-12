@@ -22,7 +22,7 @@ body {
 }
 
 .header nav a {
-  margin-left: 220px;
+  margin-left: 20px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -31,30 +31,40 @@ body {
 /* MAIN SECTION */
 .container {
   display: flex;
-  height: calc(100vh - 70px);
-  padding: 0 40px;
+  padding: 50px 40px;
   align-items: center;
   justify-content: center;
+  gap: 40px; /* spacing between each section */
 }
 
-.CENTER {
-  width: 300px;
-  text-align: center;
-  padding: 20px;
-  margin: 0 40px; /* space between image + form */
-}
-
-
-/* LEFT SECTION */
+/* LEFT IMAGE */
 .left img {
-  max-width: 450px;
+  max-width: 380px;
   width: 100%;
   border-radius: 15px;
 }
 
-/* RIGHT SECTION */
+/* CENTER TEXT */
+.CENTER {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.CENTER h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.CENTER p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* RIGHT FORM */
 .right {
-  margin-left: 560px;
   padding: 40px;
   background: #ffffff;
   border-radius: 12px;
@@ -72,6 +82,7 @@ body {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 15px;
 }
 
 .right form button {
@@ -94,21 +105,23 @@ body {
   .container {
     flex-direction: column;
     padding: 20px;
-    height: auto;
+    text-align: center;
+  }
+
+  .CENTER {
+    margin: 20px 0;
   }
 
   .right {
-    margin-left: 0;
-    margin-top: 30px;
+    width: 100%;
+    max-width: 350px;
   }
 }
 
-.footer{
+/* FOOTER */
+.footer {
   padding: 15px 40px;
   background: lightblue;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-  text-decoration: solid;
   text-align: center;
-  
+  margin-top: 40px;
 }
